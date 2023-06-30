@@ -115,10 +115,8 @@ class DMFindingGameViewController: UIViewController {
      Hint: `UIButton`s have a `setTitle` function.
      */
     func updateLetterButtons() {
-        var i = 0
-        while (i <= 11) {
-            letterButtons[i].setTitle(randomLetters[i], for: .normal)
-           i = i + 1
+        for index in 0...11 {
+            letterButtons[index].setTitle(randomLetters[index], for: .normal)
         }
     }
 }
